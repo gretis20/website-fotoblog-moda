@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabajo practico especial - Outfit Planner</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/data.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="img/LOGO.jpg" alt="Logo del sitio">
+    </div>
+  
+    <button class="hamburger-menu nav-menu-toggle"  aria-expanded="false" aria-controls="main-nav" aria-label="abrir menú de navegación">
+      <span class="hamburger-line"></span>
+    </button>
+  
+    <nav id="main-nav" class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acercade.html">Acerca de</a></li>
+        <li><a href="streetstyle.html">Street Style</a></li>
+        <li><a href="referencias.html">Referencias</a></li>
+        <li><a href="data.html">Outfit Planner</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+<!-- SECCIÓN DE FORMULARIO -->
+    <section class="seccion-looks">
+      <h2 class="titulo-seccion">Agregá tus Outfits</h2>
+      <p class="descripcion-seccion">
+        Compartí tus combinaciones favoritas, inspiraciones o estilos que te representen.  
+        Podés agregar el nombre del outfit y asignarle un valor de inspiración del 1 al 10.
+      </p>
+
+      <form id="data-form" class="formulario-look">
+        <div class="form-group">
+          <label for="item-name">Nombre del look:</label>
+          <input type="text" id="item-name" placeholder="Ej. Street Style Rosa" required>
+        </div>
+
+        <div class="form-group">
+          <label for="item-value">Nivel de inspiración:</label>
+          <input type="number" id="item-value" placeholder="Ej. 8" required>
+        </div>
+
+        <div class="form-group">
+          <label for="item-category">Categoría:</label>
+          <input type="text" id="item-category" placeholder="Ej. Urbano / Elegante" required>
+        </div>
+        
+        <div class="botones-form">
+          <button type="submit" id="add-item-btn" class="add-btn">Agregar look</button>
+          <button type="submit" id="update-item-btn" class="update-btn">Actualizar look</button>
+          <button type="reset" class="cancel-btn">Cancelar</button>
+        </div>
+      </form>
+
+      <div id="loading-indicator" class="hidden">Cargando...</div>
+      <div id="status-message" class="hidden">Mensaje a mostrar</div>
+    </section>
+
+      
+<!-- SECCIÓN DE TABLA -->
+      <section class="tabla-looks">
+        <h2 class="titulo-seccion">Mis Guardados</h2>
+        <p class="descripcion-seccion">Visualizá y gestioná los looks que agregaste.</p>
+  
+        <table id="data-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre del Look</th>
+              <th>Inspiración</th>
+              <th>Categoría</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!-- Se generan dinámicamente desde data.js -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+  <footer>
+    <div>
+      <p>&copy; 2025 Fotoblog de moda. Todos los derechos reservados. </p>
+    </div>
+  </footer>
+
+<!-- MODAL DE CONFIRMACIÓN -->
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+      <h3>¿Querés eliminar este look?</h3>
+      <div class="modal-buttons">
+        <button class="confirm-btn">Sí, eliminar</button>
+        <button class="cancel-btn">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/base.js"></script>
+  <script src="js/data.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabajo practico especial - Acerca de</title>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="img/LOGO.jpg" alt="Logo del sitio">
+    </div>
+  
+    <button class="hamburger-menu nav-menu-toggle"  aria-expanded="false" aria-controls="main-nav" aria-label="abrir menú de navegación">
+      <span class="hamburger-line"></span>
+    </button>
+  
+    <nav id="main-nav" class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acercade.html">Acerca de</a></li>
+        <li><a href="streetstyle.html">Street Style</a></li>
+        <li><a href="referencias.html">Referencias</a></li>
+        <li><a href="data.html">Outfit Planner</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="seccion-acerca">
+      <h2> Acerca de </h2>
+      <p>
+        Soy Greta Pardo, estudiante de TUDAI en la UNICEN. Me interesa la moda y el diseño UXUI, en donde encuentro una forma de conectar con la creatividad que esta presente en la cotidianidad. </p>
+       
+       
+      <div class="imagenes-acerca">  
+      <img src="img/GRE.jpg" 
+        alt="imagen acerca de " > 
+        <img src="img/GRE2.JPG" 
+        alt="imagen acerca de " >
+        </div>
+
+      <article>
+        <h3> Mi misión </h3>
+        <p>
+          Crear un espacio digital donde pueda unir mis intereses por la moda y el diseño web, mostrando estilos Y noticias del mundo fashion de una manera clara, atractiva y accesible, donde la moda sea protagonista y resaltando cómo esta misma refleja la identidad cultural de cada ciudad.
+          Conectar a amantes de la moda de diferentes partes del mundo e inspirando a nuevas generaciones a expresarse a través de su estilo personal.
+        </p>
+      </article>
+
+      <article>
+        <h3> Mi visión </h3>
+        <p>
+          Mi visión con este fotoblog va más allá de compartir imágenes y tendencias de moda: quiero que se convierta en un proyecto con potencial para crecer y ser parte de mi portfolio profesional.
+Al tratarse de mi primer sitio web, me interesa que refleje no solo mi gusto por la moda sino que también mis primeros pasos en el diseño web y en la creación de experiencias digitales.
+Me gustaría que este espacio evolucione con el tiempo,sumando nuevas secciones, recursos interactivos y diferentes formatos de contenido. Mi objetivo es que este proyecto sea una muestra de cómo puedo unir mis intereses en la creatividad visual y la tecnología, proyectándome hacia futuros trabajos y oportunidades en el mundo digital.
+        </p>
+      </article>
+    </section>
+
+      <section id="contacto" class="seccion">
+        <h2>Estemos en contacto</h2>
+        <p>
+          Si querés compartir ideas, colaborar con el fotoblog o simplemente charlar sobre moda, 
+          podés escribirme a través del siguiente formulario o seguirme en mis redes sociales:
+        </p>
+
+        <!-- Formulario -->
+        <form action="#" method="post" class="form-contacto">
+
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <small class="error-message"></small>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <small class="error-message"></small>
+      
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          <small class="error-message"></small>
+          <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Redes sociales -->
+        <div class="redes">
+          <p>Mis redes sociales:</p>
+          <ul>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn </a></li>
+          </ul>
+        </div>
+      </section>
+  </main>
+
+  <footer>
+    <div>
+      <p>&copy; 2025 Fotoblog de moda. Todos los derechos reservados. </p>
+    </div>
+  </footer>
+
+  <script src="js/base.js"></script>
+</body>
+</html>
